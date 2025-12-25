@@ -1,2 +1,2 @@
-# xmas-tree
+# Xmas Tree
 HTML Christmas Tree
