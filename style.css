@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#00111f, #003);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#snow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.snowflake {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.tree {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.star {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: gold;
+  font-size: 32px;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.5; }
+  to   { opacity: 1; }
+}
+
+.leaf {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 120px solid #0a7a2f;
+  margin: 0 auto;
+}
+
+.leaf2 {
+  margin-top: -60px;
+  border-left-width: 100px;
+  border-right-width: 100px;
+  border-bottom-width: 140px;
+}
+
+.leaf3 {
+  margin-top: -70px;
+  border-left-width: 120px;
+  border-right-width: 120px;
+  border-bottom-width: 160px;
+}
+
+.trunk {
+  width: 40px;
+  height: 60px;
+  background: #6b3e1e;
+  margin: 0 auto;
+}
